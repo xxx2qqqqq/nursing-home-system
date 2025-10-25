@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>养老院管理系统 - Vue.js项目</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .tech-stack {
+            background: #e8f4fd;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        .tech-stack h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .tech-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .tech-item {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 2px solid #3498db;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .project-structure {
+            background: #fff3cd;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .project-structure h3 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+        .commit-button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        .commit-button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 养老院管理系统</h1>
+            <p>基于 Vue.js 的现代化养老院综合管理平台</p>
+        </div>
+        
+        <div class="content">
+            <div class="features">
+                <div class="feature-card">
+                    <h3>👵 长者信息管理</h3>
+                    <p>完整的老人档案管理、健康信息跟踪、护理记录管理，支持多种查询和统计功能。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛏️ 床位分配管理</h3>
+                    <p>智能床位分配算法、实时入住状态更新、房间管理、床位使用率统计分析。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👨‍💼 员工排班调度</h3>
+                    <p>科学的员工排班系统、任务自动分配、考勤管理、绩效评估一体化解决方案。</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h2>🛠 技术栈</h2>
+                <div class="tech-items">
+                    <span class="tech-item">Vue.js</span>
+                    <span class="tech-item">Vue Router</span>
+                    <span class="tech-item">Vuex</span>
+                    <span class="tech-item">Element UI</span>
+                    <span class="tech-item">Axios</span>
+                    <span class="tech-item">HTML5</span>
+                    <span class="tech-item">CSS3</span>
+                    <span class="tech-item">JavaScript ES6+</span>
+                </div>
+            </div>
+
+            <div class="project-structure">
+                <h3>📁 项目结构</h3>
+                <p><strong>前端架构：</strong> 采用 Vue CLI 构建，包含完整的组件化开发体系</p>
+                <p><strong>功能模块：</strong> 管理员端 + 用户端双系统设计</p>
+                <p><strong>代码管理：</strong> Git版本控制，遵循标准的开发工作流</p>
+            </div>
+
+            <center>
+                <a href="https://github.com/xxxx2qqqqq/nursing-home-system" class="commit-button">
+                    📁 查看项目源码
+                </a>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
